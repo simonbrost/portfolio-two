@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="mediaqueries.css">
     <script src="script.js"></script>
 </head>
+
 <body>
     <nav id="desktop-nav">
         <div class="logo">Simon Brost</div>
@@ -38,5 +40,81 @@
 
         </div>
     </nav>
+
+    <section id="profile">
+        <div class="section_pic_container">
+            <img 
+            src="./assets/profile-pic.png" 
+            alt="Simon Brost Profile Picture"
+            class="profile_pic">
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1">
+                Hello, I am
+            </p>
+            <h1 class="title">Simon Brost</h1>
+            <p class="section_text_p2">Frontend Developer</p>
+
+            <div class="btn-container">
+                <div id="contact-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/SB.pdf')">
+                    Download CV
+                </button>
+
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact
+                </button>
+                </div>
+
+                <div id="socials-container">
+                    <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+                        onclick="location.href='https://www.linkedin.com/in/simon-brost-194647232/'">
+                    <img src="./assets/github.png" alt="My Github profile" class="icon"
+                        onclick="location.href='https://github.com/simonbrost'">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="section_text_p1">Get to Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section_pic_container">
+                <img src="./assets/about-pic.jpg" alt="Profile Picture" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience Icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>1 Year Of <br>Frontend Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education Icon" class="icon">
+                        <h3>Education</h3>
+                        <p>Certified <br>Developer Akademie</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, nobis itaque possimus
+                        consequuntur suscipit quae eligendi mollitia delectus. Harum minus rerum sequi suscipit dolorum
+                        ad doloribus officia consectetur ratione maiores? Blanditiis fuga officiis exercitationem
+                        labore, animi nesciunt nihil repellat, ipsum, in nostrum quasi debitis iusto! Iusto quidem
+                        repudiandae optio incidunt.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img 
+        src="./assets/arrow.png" 
+        alt="Down"
+        class="icon arrow"
+        onclick="location.href='./experience'"
+        >
+    </section>
 </body>
+
 </html>
