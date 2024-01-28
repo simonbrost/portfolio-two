@@ -4,9 +4,13 @@
     margin: 0;
 }
 
-/* body {
-    font-family: ;
-} */
+@font-face {
+    font-family: 'montserrat';
+    src: url('fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf');
+}
+ body {
+    font-family: montserrat;
+} 
 
 html {
     scroll-behavior: smooth;
@@ -60,6 +64,35 @@ a:hover {
 .logo:hover{
     cursor: default;
 }
+
+.dark-mode-toggle {
+    position: relative;
+    width: 60px;
+    height: 30px;
+    background-color: #333;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  
+  .dark-mode-toggle .slider {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 26px;
+    height: 26px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: 0.3s;
+  }
+  
+  /* Apply styles for dark mode */
+  .dark-mode .dark-mode-toggle {
+    background-color: #666;
+  }
+  
+  .dark-mode .dark-mode-toggle .slider {
+    left: 32px;
+  }
 
 /*MOBILE NAV*/
 
@@ -273,6 +306,10 @@ section {
     display: flex;
 }
 
+.text-container p {
+    text-align: justify;
+}
+
 .about-pic {
     border-radius: 50%;
 }
@@ -281,6 +318,11 @@ section {
     position: absolute;
     right: -5rem;
     bottom: 2.5rem;
+}
+
+.arrow-up {
+    position: absolute;
+    right: 5rem;
 }
 
 .details-container {
@@ -418,3 +460,45 @@ footer {
 footer p {
     text-align: center;
 }
+
+.back-to-top-button {
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .back-to-top-button:hover {
+    background-color: #555;
+  }
+  
+  /* Display the button when scrolling down */
+  body.dark-mode .back-to-top-button {
+    background-color: #666;
+  }
+
+/* DARK MODE */
+body.dark-mode {
+    background-color: #121212f2;
+    color: #fff;
+  }
+  
+  nav.dark-mode {
+    background-color: #333;
+  }
+  
+  .nav-links.dark-mode a {
+    color: #fff;
+  }
+  
+  .nav-links.dark-mode a:hover {
+    color: #ccc;
+  }
+
+  .details-container h3 {
+    color: #333;
+  }

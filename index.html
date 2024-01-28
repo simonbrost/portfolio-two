@@ -7,7 +7,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
 </head>
 
 <body>
@@ -20,6 +20,9 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+        </div>
+        <div class="dark-mode-toggle" onclick="toggleDarkMode()">
+            <div class="slider"></div>
         </div>
     </nav>
 
@@ -96,11 +99,13 @@
                 </div>
                 <div class="text-container">
                     <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, nobis itaque possimus
-                        consequuntur suscipit quae eligendi mollitia delectus. Harum minus rerum sequi suscipit dolorum
-                        ad doloribus officia consectetur ratione maiores? Blanditiis fuga officiis exercitationem
-                        labore, animi nesciunt nihil repellat, ipsum, in nostrum quasi debitis iusto! Iusto quidem
-                        repudiandae optio incidunt.
+                        I am a 30-year-old Front End Developer residing in the rural village of Bockfließ, Niederösterreich, just a stone's throw away from the vibrant city of Vienna. 
+                        My journey into the realm of technology began in my childhood, fueled by an innate fascination with all things technical.
+                        With a solid foundation in a pedagogical background, I've seamlessly transitioned my passion for education into a fulfilling career in software development.
+                        Motivated by the desire to turn my hobby into a profession, I independently financed my education to embark on this exciting journey.
+                        As a Front End Developer, I infuse my work with a thirst for knowledge, communicative prowess, unwavering ambition, and a collaborative spirit. 
+                        Beyond the lines of code, I am dedicated to creating visually appealing and user-friendly digital experiences that make a lasting impression. 
+                        My diverse experiences, coupled with my commitment to ongoing learning, contribute to my ability to approach projects with both creativity and technical acumen.
                     </p>
                 </div>
             </div>
@@ -243,6 +248,7 @@
             </div>
         </nav>
         <p>Copyright &#169; 2024 Simon Brost. All Rights Reserved</p>
+        <img src="./assets/arrowup.png" alt="Up" class="icon arrow-up" onclick="scrollToTop()">
     </footer>
 </body>
 
