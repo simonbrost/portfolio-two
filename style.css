@@ -6,11 +6,14 @@
 
 @font-face {
     font-family: 'montserrat';
-    src: url('fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf');
+    src: url('fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
 }
- body {
+
+body {
     font-family: montserrat;
-} 
+    background: rgb(189, 219, 255);
+    background: radial-gradient(circle, rgba(189, 219, 255, 1) 0%, rgba(173, 255, 243, 1) 100%);
+}
 
 html {
     scroll-behavior: smooth;
@@ -22,13 +25,15 @@ p {
 
 /*TRANSITION*/
 
-a, .btn {
+a,
+.btn {
     transition: all 300ms ease;
 }
 
 /*DESKTOP NAV*/
 
-nav, .nav-links {
+nav,
+.nav-links {
     display: flex;
 }
 
@@ -61,7 +66,7 @@ a:hover {
     font-size: 2rem;
 }
 
-.logo:hover{
+.logo:hover {
     cursor: default;
 }
 
@@ -69,12 +74,12 @@ a:hover {
     position: relative;
     width: 60px;
     height: 30px;
-    background-color: #333;
+    background-color: rgb(53, 53, 53);
     border-radius: 15px;
     cursor: pointer;
-  }
-  
-  .dark-mode-toggle .slider {
+}
+
+.dark-mode-toggle .slider {
     position: absolute;
     top: 2px;
     left: 2px;
@@ -83,16 +88,16 @@ a:hover {
     background-color: #fff;
     border-radius: 50%;
     transition: 0.3s;
-  }
-  
-  /* Apply styles for dark mode */
-  .dark-mode .dark-mode-toggle {
-    background-color: #666;
-  }
-  
-  .dark-mode .dark-mode-toggle .slider {
+}
+
+/* Apply styles for dark mode */
+.dark-mode .dark-mode-toggle {
+    background-color: rgb(53, 53, 53);
+}
+
+.dark-mode .dark-mode-toggle .slider {
     left: 32px;
-  }
+}
 
 /*MOBILE NAV*/
 
@@ -113,6 +118,7 @@ a:hover {
     width: 30px;
     cursor: pointer;
 }
+
 .menu-icon span {
     width: 100%;
     height: 2px;
@@ -152,9 +158,11 @@ a:hover {
 .menu-icon.open span:first-child {
     transform: rotate(45deg) translate(10px, 5px);
 }
+
 .menu-icon.open span:nth-child(2) {
     opacity: 0;
 }
+
 .menu-icon.open span:last-child {
     transform: rotate(-45deg) translate(10px, -5px);
 }
@@ -162,9 +170,11 @@ a:hover {
 .menu-icon span:first-child {
     transform: none;
 }
+
 .menu-icon span:nth-child(2) {
     opacity: 1;
 }
+
 .menu-icon span:last-child {
     transform: none;
 }
@@ -198,6 +208,7 @@ section {
     width: 400px;
     margin: auto 0;
 }
+
 .profile_pic {
     border-radius: 50%;
 }
@@ -214,10 +225,12 @@ section {
 .section_text_p1 {
     text-align: center;
 }
+
 .section_text_p2 {
     font-size: 1.75rem;
     margin-bottom: 1rem;
 }
+
 .title {
     font-size: 3rem;
     text-align: center;
@@ -237,6 +250,15 @@ section {
     height: 2rem;
 }
 
+.socials {
+    border-radius: 50%;
+    transition: box-shadow 0.3s ease;
+}
+
+.socials:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  }
+
 /*BUTTONS*/
 
 .btn-container {
@@ -246,6 +268,7 @@ section {
     align-items: center;
     gap: 1rem;
 }
+
 .btn {
     font-weight: 600;
     transition: all 300ms ease;
@@ -254,15 +277,17 @@ section {
     border-radius: 2rem;
 }
 
-.btn-color-1, 
+.btn-color-1,
 .btn-color-2 {
     border: rgb(53, 53, 53) 0.1rem solid;
 }
-.btn-color-1:hover, 
+
+.btn-color-1:hover,
 .btn-color-2:hover {
     cursor: pointer;
 }
-.btn-color-1, 
+
+.btn-color-1,
 .btn-color-2:hover {
     background: rgb(53, 53, 53);
     color: white;
@@ -301,7 +326,7 @@ section {
     flex-direction: column;
 }
 
-.about-containers, 
+.about-containers,
 .about-details-container {
     display: flex;
 }
@@ -326,11 +351,11 @@ section {
 }
 
 .details-container {
-    padding: 1.5rem;
+    padding: 0.5rem;
     flex: 1;
     background: white;
     border-radius: 2rem;
-    border:rgb(53, 53, 53) 0.1rem solid;
+    border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
     text-align: center;
 }
@@ -339,6 +364,7 @@ section {
     gap: 4rem;
     height: 80%;
 }
+
 .section_pic_container {
     height: 400px;
     width: 400px;
@@ -364,19 +390,41 @@ section {
     justify-content: center;
     flex-direction: column;
 }
+
 .article-container {
     display: flex;
     text-align: initial;
     text-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     gap: 2.5rem;
     justify-content: space-around;
 }
+.article-container div{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
 article {
     display: flex;
+    flex-direction: column;
     width: 10rem;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     gap: 0.5rem;
+}
+
+.dev-icons {
+    height: 50px;
+    width: 50px;
+}
+
+.dev-lvl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 article .icon {
@@ -443,7 +491,7 @@ article .icon {
 }
 
 .contact-icon {
-    cursor: default;    
+    cursor: default;
 }
 
 .email-icon {
@@ -455,7 +503,7 @@ article .icon {
 footer {
     height: 26vh;
     margin: 0 1rem;
-} 
+}
 
 footer p {
     text-align: center;
@@ -470,35 +518,58 @@ footer p {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
-  
-  .back-to-top-button:hover {
+}
+
+.back-to-top-button:hover {
     background-color: #555;
-  }
-  
-  /* Display the button when scrolling down */
-  body.dark-mode .back-to-top-button {
+}
+
+body.dark-mode .back-to-top-button {
     background-color: #666;
-  }
+}
 
 /* DARK MODE */
 body.dark-mode {
-    background-color: #121212f2;
+    background: rgb(0, 48, 107);
+    background: radial-gradient(circle, rgba(0, 48, 107, 1) 0%, rgba(0, 75, 65, 1) 100%);
     color: #fff;
-  }
-  
-  nav.dark-mode {
-    background-color: #333;
-  }
-  
-  .nav-links.dark-mode a {
-    color: #fff;
-  }
-  
-  .nav-links.dark-mode a:hover {
-    color: #ccc;
-  }
+}
 
-  .details-container h3 {
-    color: #333;
-  }
+body.dark-mode .socials:hover {
+    background-color: rgba(173, 255, 243, 0.5);
+    box-shadow: 0px 4px 8px 0px rgba(173, 255, 243, 0.5),
+        0px 8px 16px 0px rgba(173, 255, 243, 0.5),
+        0px 16px 32px 0px rgba(173, 255, 243, 0.5),
+        0px 32px 64px 0px rgba(173, 255, 243, 0.5);
+}
+
+body.dark-mode p {
+    color: white;
+}
+
+.details-container h3 {
+    color: black;
+}
+body.dark-mode .details-container p {
+    color: black;
+}
+
+/* CUSTOM SCROLLBAR */
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(250, 250, 250);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(53, 53, 53);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
