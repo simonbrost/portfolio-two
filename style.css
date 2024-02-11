@@ -30,6 +30,28 @@ a,
     transition: all 300ms ease;
 }
 
+/* LIGHTSWITCH */
+
+.dark-mode-toggle {
+    position: relative;
+    width: 60px;
+    height: 30px;
+    background-color: rgb(53, 53, 53);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.dark-mode-toggle .slider {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 26px;
+    height: 26px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
 /*DESKTOP NAV*/
 
 nav,
@@ -68,35 +90,6 @@ a:hover {
 
 .logo:hover {
     cursor: default;
-}
-
-.dark-mode-toggle {
-    position: relative;
-    width: 60px;
-    height: 30px;
-    background-color: rgb(53, 53, 53);
-    border-radius: 15px;
-    cursor: pointer;
-}
-
-.dark-mode-toggle .slider {
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    width: 26px;
-    height: 26px;
-    background-color: #fff;
-    border-radius: 50%;
-    transition: 0.3s;
-}
-
-/* Apply styles for dark mode */
-.dark-mode .dark-mode-toggle {
-    background-color: rgb(53, 53, 53);
-}
-
-.dark-mode .dark-mode-toggle .slider {
-    left: 32px;
 }
 
 /*MOBILE NAV*/
@@ -530,6 +523,15 @@ body.dark-mode .back-to-top-button {
 }
 
 /* DARK MODE */
+
+.dark-mode .dark-mode-toggle {
+    background-color: rgb(53, 53, 53);
+}
+
+.dark-mode .dark-mode-toggle .slider {
+    left: 32px;
+}
+
 body.dark-mode {
     background: rgb(0, 48, 107);
     background: radial-gradient(circle, rgba(0, 48, 107, 1) 0%, rgba(0, 75, 65, 1) 100%);
